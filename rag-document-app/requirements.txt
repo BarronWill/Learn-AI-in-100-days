@@ -1,0 +1,17 @@
+# --- Web API ---
+fastapi==0.162.3
+uvicorn[standard]==0.54.0
+python-multipart==0.0.33   # required by FastAPI for UploadFile / File(...)
+pydantic==2.14.3
+
+# --- Document parsing ---
+pypdf==7.0.1
+python-docx==1.2.0
+
+# --- Dev / testing ---
+pytest==9.0.3
+
+# --- Add when you implement these modules ---
+# sentence-transformers     # app/core/embeddings.py (bge-small)
+# chromadb                  # app/db/vector_store.py (or qdrant-client)
+# pydantic-settings         # app/config.py, to read .env
