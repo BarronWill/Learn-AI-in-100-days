@@ -47,6 +47,7 @@ def process_document(file_path: str) -> List[DocumentChunk]:
         text,
         chunk_size=settings.chunk_size,
         chunk_overlap=settings.chunk_overlap,
+        strategy=settings.chunk_strategy,
     )
 
     file_name = path.name
